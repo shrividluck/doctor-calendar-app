@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "1dc9feab-f3dc-478d-92cb-206e0310b110",
+		"name": "Doctor-Calendar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/appointment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_doc_id\":\"1\", \"date\":\"2011-11-10\", \"time\":\"08:46\", \"_patient_first_name\":\"John\", \"kind_of_appointment\": \"Follow-up\", \"_patient_last_name\":\"W\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/appointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"appointment"
+					]
+				},
+				"description": "Post to create an appointment\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/appointment/18",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_doc_id\":\"1\", \"date\":\"2011-11-13\", \"time\":\"08:45\", \"_patient_first_name\":\"John\", \"kind_of_appointment\": \"Follow-up\", \"_patient_last_name\":\"W\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/appointment/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"appointment",
+						"18"
+					]
+				},
+				"description": "Delete an appointment by appointment ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/appointments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_doc_id\":\"1\", \"date\":\"2011-11-14\", \"time\":\"08:45\", \"_patient_first_name\":\"John\", \"kind_of_appointment\": \"Follow-up\", \"_patient_last_name\":\"W\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"appointments"
+					]
+				},
+				"description": "Get list of appointments\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/doctors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"Third note!!\", \"content\": \"Postman is still awesome\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"doctors"
+					]
+				},
+				"description": "Get list of doctors\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
