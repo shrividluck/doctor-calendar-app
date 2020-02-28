@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>easy-notes</artifactId>
+	<artifactId>doctor-calendar</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>easy-notes</name>
+	<name>doctor-calendar</name>
 	<description>Rest API for Doctor Calendar Application</description>
 
 	<parent>
