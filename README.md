@@ -4,6 +4,9 @@ Doctor Appointment Calendar App
 Requirements : mysql, maven, java jdk 
 
 * Create Mysql database - doctor_db
+* Create doctor_table with columns : doc_id (primary_key, unsigned, auto_increment, unique), firstname, lastname
+* Create appt_table with columns : apptointmentid (primary_key, unsigned, auto_increment, unique), date, time, doc_id, patientfirstname, patientlastname, kindofappointment
+* Add data on mysql to doctor_table with doc_id = 1, firstname = "John", lastname = "Doe" and so on.
 * Change mysql username and password as per your installation 
 * Go to src/main/resources/application.properties,change spring.datasource.username and spring.datasource.password as per your mysql installation.
 * Build : `mvn package`
